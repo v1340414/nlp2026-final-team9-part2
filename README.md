@@ -1,6 +1,5 @@
 # nlp2026-final-team9-part2
 [prefix Tuning 실행 예]
-# Prefix-tuning Sonnet Generation 학습 + dev prompt 생성
 python sonnet_generation.py \
   --use_gpu \
   --epochs 10 \
