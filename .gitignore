@@ -1,0 +1,10 @@
+*pretest
+*~
+*.pyc
+*.pt
+*.pkl
+.idea/
+out/
+.DS_Store
+predictions/*
+logs/*
