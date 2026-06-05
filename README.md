@@ -1,5 +1,5 @@
 # nlp2026-final-team9-part2
-[prefix Tuning 실행 예]
+[prefix Tuning 실행 예] \
 python sonnet_generation.py \
   --use_gpu \
   --epochs 10 \
