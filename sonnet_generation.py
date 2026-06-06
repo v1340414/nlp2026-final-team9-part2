@@ -29,6 +29,7 @@ from datasets import SonnetsDataset
 from models.gpt2 import GPT2Model
 from optimizer import AdamW
 
+from rhyme_decoding import generate_rhyming_sonnet, NUM_LINES
 
 TQDM_DISABLE = False
 
@@ -478,7 +479,7 @@ def train(args):
 def generate_submission_sonnets(args):
   device = torch.device("cuda") if args.use_gpu else torch.device("cpu")
 
-  # dev loss 기준으로 저장된 best checkpoint를 불러온다.
+  # dev loss 기준으로 저장된 best checkpoint 불러오기
   saved = torch.load(args.filepath, weights_only=False)
 
   model = SonnetGPT(saved["args"])
@@ -487,32 +488,34 @@ def generate_submission_sonnets(args):
   model.eval()
 
   held_out_sonnet_dataset = SonnetsDataset(args.held_out_sonnet_path)
+  num_candidates = getattr(args, "num_candidates", 10)
+
 
   generated_sonnets = []
   for batch in held_out_sonnet_dataset:
     sonnet_id = batch[0]
     prompt_text = batch[1]
 
-    encoding = model.tokenizer(
+    result = generate_rhyming_sonnet(
+      model,
       prompt_text,
-      return_tensors="pt",
-      padding=False,
-      truncation=True,
-    ).to(device)
-
-    output_ids, _ = model.generate(
-      encoding["input_ids"],
+      num_candidates=num_candidates,
       temperature=args.temperature,
       top_p=args.top_p,
-      max_length=args.max_length,
+      max_line_tokens=11,
+      min_line_tokens=4,
+      soft_target_tokens=8, nl_boost=2.0,
+      penalize_identical=False,
+      verbose=False,
     )
+    
+    # 14줄 제한
+    sonnet_lines = [l for l in result["text"].split("\n") if l.strip()][:NUM_LINES]
+    full_sonnet = "\n".join(sonnet_lines)
 
-    decoded_output = model.tokenizer.decode(output_ids[0].cpu().numpy().tolist())
-    full_sonnet = f"{decoded_output}\n\n"
     generated_sonnets.append((sonnet_id, full_sonnet))
-
-    write_log(f"Sonnet {sonnet_id}\n{decoded_output}\n", args.log_path)
-
+    write_log(f"Sonnet {sonnet_id}\n{full_sonnet}\n", args.log_path)
+  
   output_dir = os.path.dirname(args.sonnet_out)
   if output_dir:
     os.makedirs(output_dir, exist_ok=True)
@@ -522,6 +525,8 @@ def generate_submission_sonnets(args):
     for sonnet_id, sonnet_text in generated_sonnets:
       f.write(f"\n{sonnet_id}\n")
       f.write(sonnet_text)
+      
+  return generated_sonnets
 
 
 def get_args():
