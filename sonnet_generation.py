@@ -14,6 +14,7 @@ from datetime import datetime
 import os
 import argparse
 import random
+import sys
 import torch
 
 import numpy as np
@@ -28,15 +29,31 @@ from einops import rearrange
 from datasets import SonnetsDataset
 from models.gpt2 import GPT2Model
 from optimizer import AdamW
+from ridge_reranker import (
+  chrf_target,
+  extract_features,
+  features_to_vector,
+  fit_ridge_reranker,
+  load_ridge_model,
+  rerank_sonnets,
+  save_ridge_fit,
+)
 
 from rhyme_decoding import generate_rhyming_sonnet, NUM_LINES
 
 TQDM_DISABLE = False
+LOG_TO_CONSOLE = True
 
 
 # 로그 기록용 함수.
 def write_log(message, log_path):
-  print(message)
+  if LOG_TO_CONSOLE:
+    try:
+      print(message)
+    except UnicodeEncodeError:
+      encoding = sys.stdout.encoding or "utf-8"
+      safe_message = message.encode(encoding, errors="replace").decode(encoding)
+      print(safe_message)
 
   if log_path is not None:
     log_dir = os.path.dirname(log_path)
@@ -86,6 +103,12 @@ def init_training_log(args, model, log_path):
     f.write(f"temperature: {args.temperature}\n")
     f.write(f"top_p: {args.top_p}\n")
     f.write(f"max_length: {args.max_length}\n")
+    f.write(f"line_level_num_candidates: {getattr(args, 'num_candidates', 10)}\n")
+    f.write(f"rerank_candidates: {getattr(args, 'rerank_candidates', 1)}\n")
+    f.write(f"reranker: {getattr(args, 'reranker', 'ridge')}\n")
+    f.write(f"ridge_alpha: {getattr(args, 'ridge_alpha', 1.0)}\n")
+    f.write(f"ridge_train_candidates: {getattr(args, 'ridge_train_candidates', 5)}\n")
+    f.write(f"ridge_model_path: {getattr(args, 'ridge_model_path', None)}\n")
     f.write("\n")
 
     f.write("[Data]\n")
@@ -328,7 +351,91 @@ def evaluate_lm_loss(model, dataloader, device):
   return total_loss / max(num_batches, 1)
 
 
+@torch.no_grad()
+def generate_sonnet_candidates(model, prompt_text, num_full_candidates, args):
+  """
+  prompt에 대해 완성 소네트 후보 여러 개를 생성한다.
+  """
+  candidates = []
+  num_full_candidates = max(1, num_full_candidates)
+  num_line_candidates = getattr(args, "num_candidates", 10)
+
+  for _ in range(num_full_candidates):
+    result = generate_rhyming_sonnet(
+      model,
+      prompt_text,
+      num_candidates=num_line_candidates,
+      temperature=args.temperature,
+      top_p=args.top_p,
+      max_line_tokens=11,
+      min_line_tokens=4,
+      soft_target_tokens=8, nl_boost=2.0,
+      penalize_identical=False,
+      verbose=False,
+    )
+
+    sonnet_lines = [line for line in result["text"].split("\n") if line.strip()][:NUM_LINES]
+    candidates.append("\n".join(sonnet_lines))
+
+  return candidates
+
+
+@torch.no_grad()
+def train_ridge_reranker(model, args):
+  """
+  dev prompt에서 후보를 만들고 gold와의 chrF를 target으로 Ridge reranker를 학습한다.
+  """
+  prompt_dataset = SonnetsDataset(args.ridge_prompt_path)
+  gold_dataset = SonnetsDataset(args.ridge_gold_path)
+  num_prompts = min(len(prompt_dataset), len(gold_dataset))
+
+  if num_prompts == 0:
+    raise ValueError("Ridge reranker needs at least one dev prompt/gold pair.")
+
+  feature_rows = []
+  targets = []
+  train_candidates = max(1, args.ridge_train_candidates)
+
+  for idx in tqdm(range(num_prompts), desc="ridge-train", disable=TQDM_DISABLE):
+    _, prompt_text = prompt_dataset[idx]
+    _, gold_text = gold_dataset[idx]
+
+    prompt_start = time.time()
+    write_log(
+      f"Ridge training candidates for dev prompt {idx + 1}/{num_prompts}...",
+      args.log_path,
+    )
+
+    candidate_sonnets = generate_sonnet_candidates(
+      model,
+      prompt_text,
+      train_candidates,
+      args,
+    )
+
+    for candidate in candidate_sonnets:
+      features = extract_features(candidate, prompt=prompt_text)
+      feature_rows.append(features_to_vector(features))
+      targets.append(chrf_target(candidate, gold_text))
+
+    write_log(
+      f"Finished Ridge dev prompt {idx + 1}/{num_prompts} "
+      f"in {time.time() - prompt_start:.2f}s",
+      args.log_path,
+    )
+
+  return fit_ridge_reranker(
+    feature_rows,
+    targets,
+    alpha=args.ridge_alpha,
+  )
+
+
 def save_model(model, optimizer, args, filepath):
+  checkpoint_dir = os.path.dirname(filepath)
+  if checkpoint_dir:
+    os.makedirs(checkpoint_dir, exist_ok=True)
+
   save_info = {
     "model": model.state_dict(),
     "optim": optimizer.state_dict(),
@@ -488,32 +595,92 @@ def generate_submission_sonnets(args):
   model.eval()
 
   held_out_sonnet_dataset = SonnetsDataset(args.held_out_sonnet_path)
-  num_candidates = getattr(args, "num_candidates", 10)
+  rerank_candidates = max(1, getattr(args, "rerank_candidates", 1))
+  use_ridge_reranker = args.reranker == "ridge" and rerank_candidates > 1
 
+  ridge_fit = None
+  ridge_model = None
+  if use_ridge_reranker:
+    ridge_model_path = getattr(args, "ridge_model_path", None)
+    if ridge_model_path and os.path.exists(ridge_model_path):
+      ridge_model = load_ridge_model(ridge_model_path)
+      write_log(f"Loaded Ridge reranker from {ridge_model_path}", args.log_path)
+    else:
+      write_log(
+        f"Training Ridge reranker from {args.ridge_prompt_path} / {args.ridge_gold_path} "
+        f"with {args.ridge_train_candidates} candidates per prompt.",
+        args.log_path,
+      )
+
+      if os.path.abspath(args.held_out_sonnet_path) == os.path.abspath(args.ridge_prompt_path):
+        write_log(
+          "Warning: held_out_sonnet_path is the same as ridge_prompt_path; "
+          "Ridge selection will be optimistic on this split.",
+          args.log_path,
+        )
+
+      ridge_fit = train_ridge_reranker(model, args)
+      ridge_model = ridge_fit.model
+
+      if ridge_model_path:
+        save_ridge_fit(ridge_model_path, ridge_fit)
+        write_log(f"Saved Ridge reranker to {ridge_model_path}", args.log_path)
+
+      write_log(
+        f"Ridge reranker trained: examples={ridge_fit.num_examples}, "
+        f"target_mean={ridge_fit.target_mean:.4f}, target_std={ridge_fit.target_std:.4f}, "
+        f"train_mae={ridge_fit.train_mae:.4f}, intercept={ridge_fit.model.intercept:.4f}",
+        args.log_path,
+      )
+
+    coef_log = ", ".join(
+      f"{name}={coef:.4f}"
+      for name, coef in zip(ridge_model.feature_names, ridge_model.coef)
+    )
+    write_log(f"Ridge coefficients: {coef_log}", args.log_path)
 
   generated_sonnets = []
   for batch in held_out_sonnet_dataset:
     sonnet_id = batch[0]
     prompt_text = batch[1]
 
-    result = generate_rhyming_sonnet(
+    candidate_count = rerank_candidates if use_ridge_reranker else 1
+    generation_start = time.time()
+    write_log(
+      f"Generating {candidate_count} candidate(s) for Sonnet {sonnet_id}...",
+      args.log_path,
+    )
+
+    candidate_sonnets = generate_sonnet_candidates(
       model,
       prompt_text,
-      num_candidates=num_candidates,
-      temperature=args.temperature,
-      top_p=args.top_p,
-      max_line_tokens=11,
-      min_line_tokens=4,
-      soft_target_tokens=8, nl_boost=2.0,
-      penalize_identical=False,
-      verbose=False,
+      candidate_count,
+      args,
     )
-    
-    # 14줄 제한
-    sonnet_lines = [l for l in result["text"].split("\n") if l.strip()][:NUM_LINES]
-    full_sonnet = "\n".join(sonnet_lines)
+
+    if use_ridge_reranker:
+      reranked = rerank_sonnets(
+        candidate_sonnets,
+        prompt=prompt_text,
+        model=ridge_model,
+      )
+      full_sonnet = reranked.text
+      feature_log = ", ".join(
+        f"{name}={value:.3f}" for name, value in sorted(reranked.features.items())
+      )
+      write_log(
+        f"Ridge reranker selected candidate {reranked.candidate_index + 1}/{rerank_candidates} "
+        f"for Sonnet {sonnet_id}: predicted_chrf={reranked.score:.4f} ({feature_log})",
+        args.log_path,
+      )
+    else:
+      full_sonnet = candidate_sonnets[0]
 
     generated_sonnets.append((sonnet_id, full_sonnet))
+    write_log(
+      f"Finished Sonnet {sonnet_id} in {time.time() - generation_start:.2f}s",
+      args.log_path,
+    )
     write_log(f"Sonnet {sonnet_id}\n{full_sonnet}\n", args.log_path)
   
   output_dir = os.path.dirname(args.sonnet_out)
@@ -536,6 +703,12 @@ def get_args():
   parser.add_argument("--dev_sonnet_path", type=str, default="data/TRUE_sonnets_held_out_dev.txt")
   parser.add_argument("--held_out_sonnet_path", type=str, default="data/sonnets_held_out.txt")
   parser.add_argument("--sonnet_out", type=str, default="predictions/generated_sonnets.txt")
+  parser.add_argument(
+    "--filepath",
+    type=str,
+    default=None,
+    help="Checkpoint path. Defaults to {epochs}-{lr}-prefix-sonnet.pt.",
+  )
 
   parser.add_argument("--seed", type=int, default=11711)
   parser.add_argument("--epochs", type=int, default=10)
@@ -550,6 +723,55 @@ def get_args():
     default=0.9,
   )
   parser.add_argument("--max_length", type=int, default=128)
+  parser.add_argument(
+    "--num_candidates",
+    type=int,
+    default=10,
+    help="Line-level candidates used inside rhyme-aware decoding.",
+  )
+  parser.add_argument(
+    "--rerank_candidates",
+    type=int,
+    default=1,
+    help="Number of full-sonnet candidates to generate and rerank. 1 disables final reranking.",
+  )
+  parser.add_argument(
+    "--reranker",
+    type=str,
+    choices=["none", "ridge"],
+    default="ridge",
+    help="Final full-sonnet reranker to use when rerank_candidates > 1.",
+  )
+  parser.add_argument(
+    "--ridge_alpha",
+    type=float,
+    default=1.0,
+    help="L2 regularization strength for the Ridge reranker.",
+  )
+  parser.add_argument(
+    "--ridge_train_candidates",
+    type=int,
+    default=5,
+    help="Full-sonnet candidates generated per dev prompt to train the Ridge reranker.",
+  )
+  parser.add_argument(
+    "--ridge_prompt_path",
+    type=str,
+    default="data/sonnets_held_out_dev.txt",
+    help="Dev prompt file used to train the Ridge reranker.",
+  )
+  parser.add_argument(
+    "--ridge_gold_path",
+    type=str,
+    default="data/TRUE_sonnets_held_out_dev.txt",
+    help="Dev gold sonnet file used as chrF target for the Ridge reranker.",
+  )
+  parser.add_argument(
+    "--ridge_model_path",
+    type=str,
+    default=None,
+    help="Path to load/save the fitted Ridge reranker JSON. Existing files are loaded.",
+  )
 
   parser.add_argument("--batch_size", help="The training batch size.", type=int, default=8)
   parser.add_argument("--lr", type=float, help="learning rate", default=1e-5)
@@ -562,6 +784,11 @@ def get_args():
   )
 
   parser.add_argument("--log_path", type=str, default="logs/sonnet_train.log")
+  parser.add_argument(
+    "--log_to_file_only",
+    action="store_true",
+    help="Write logs only to log_path and disable tqdm console progress bars.",
+  )
 
   # Prefix-tuning parameters.
   parser.add_argument("--prefix_length", type=int, default=10)
@@ -602,7 +829,10 @@ def add_arguments(args):
 
 if __name__ == "__main__":
   args = get_args()
-  args.filepath = f"{args.epochs}-{args.lr}-prefix-sonnet.pt"
+  LOG_TO_CONSOLE = not args.log_to_file_only
+  TQDM_DISABLE = args.log_to_file_only
+  if args.filepath is None:
+    args.filepath = f"{args.epochs}-{args.lr}-prefix-sonnet.pt"
 
   seed_everything(args.seed)
 
