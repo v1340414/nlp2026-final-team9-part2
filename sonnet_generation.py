@@ -367,7 +367,7 @@ def generate_sonnet_candidates(model, prompt_text, num_full_candidates, args):
       num_candidates=num_line_candidates,
       temperature=args.temperature,
       top_p=args.top_p,
-      max_line_tokens=11,
+      max_line_tokens=22,
       min_line_tokens=4,
       soft_target_tokens=8, nl_boost=2.0,
       penalize_identical=False,
