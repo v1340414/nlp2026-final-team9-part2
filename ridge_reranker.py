@@ -29,7 +29,6 @@ RHYME_PAIRS = (
 FEATURE_NAMES = (
   "rhyme",
   "graded_rhyme",
-  "line_count",
   "length",
   "length_variance",
   "repetition",
@@ -96,12 +95,6 @@ def normalize_sonnet_text(text: str) -> str:
 
 def _word_tokens(text: str) -> List[str]:
   return re.findall(r"[A-Za-z']+", text.lower())
-
-
-def _line_count_feature(lines: Sequence[str]) -> float:
-  if len(lines) == NUM_LINES:
-    return 1.0
-  return max(0.0, 1.0 - abs(NUM_LINES - len(lines)) / NUM_LINES)
 
 
 def _length_features(lines: Sequence[str], target_words: float = 8.0) -> Tuple[float, float]:
@@ -202,7 +195,6 @@ def extract_features(text: str, prompt: str = "") -> Dict[str, float]:
   return {
     "rhyme": hard_rhyme,
     "graded_rhyme": graded_rhyme,
-    "line_count": _line_count_feature(lines),
     "length": length_score,
     "length_variance": length_variance_score,
     "repetition": _repetition_feature(lines),
