@@ -1,0 +1,185 @@
+# Experiment Metadata
+# {"checkpoint": "/home/elicer/project/p3_decoding_cloud/checkpoints/p3_selected_checkpoint.pt", "experiment": "rerank_balanced_n30", "max_length": 180, "method": "cmu_ridge", "model_size": "gpt2-xl", "num_candidates": 30, "prefix_hidden_size": 512, "prefix_length": 20, "prefix_source": "P3_prefix20_hidden512_lr2e-4", "rerank_candidates": 3, "ridge_model_path": "/home/elicer/project/p3_decoding_cloud/../p3_decoding_results/rerank_balanced_n30/ridge_model.json", "ridge_train_candidates": 3, "ridge_trained_this_run": true, "seed": 11711, "split": "test", "target_lines": 14, "temperature": 0.7, "top_p": 0.85}
+--Generated Sonnets-- 
+
+
+0
+Those lips that Love's own hand did make
+Breathed forth the sound that said "I hate"
+To me that languished for her sake;
+And yet I love, and thou wilt not
+The thought of my love but what I do
+Doubtful say, who would think it true
+That so sweet a thing as mine should be
+A traitor to thee.
+Yet in this is thy beauty,
+Thou art more than one living eye
+Of one richly tinted and bright
+Which we see with our eyes, or one
+Whose wax-white face doth testify
+With blotted blood upon his cheeks.
+1
+Poor soul, the center of my sinful earth,
+Pressed with these rebel powers that thee array,
+Why dost thou pine within and suffer dearth,
+When I should give thy mortal frame to decay?
+I have made mine own flesh a living tree
+That nourisheth all things; then why do
+Thy body's part grow sickly in me
+And show thyself rotten to every fair hue
+Of my hues? Why doth thy hue degenerate
+To a wan pallidness when nature
+Shall make it bright again at last
+In her full state of beauty?
+That was but vanity. Thou art no better
+Than the most wretched thing I see: yet were
+2
+My love is as a fever, longing still
+For that which longer nurseth the disease,
+Feeding on that which doth preserve the ill,
+And the true food of my soul hath his
+soul and me in common;
+So do I with him which holds me fast
+In this strange alliance. O sweet one,
+I think you hold me so fast,
+That your heart must be mine to live
+Or else not. If it were otherwise,
+If either should die but I live,
+Then would I take my life before yours
+To give myself leave to you to die.
+Then all those who had loved me now
+3
+O me, what eyes hath love put in my head,
+Which have no correspondence with true sight!
+Or if they have, where is my judgment fled,
+And what, I fear, a pretty deceit
+Hath taken up to blind the sight of my soul
+To see its beauty as it ought?
+Then for this reason do I wear that veil
+That, though full oft-blooming flowers on it
+But doth not so much their dye dye
+As to hide all from sight. And why should I
+Be otherwise than beautiful when mine eye
+Is clear and perfect and seems so?
+My best friend may look upon his fair
+But he will find nothing but darkness there
+4
+Canst thou, O cruel, say I love thee not
+When I against myself with thee partake?
+Do I not think on thee when I forgot
+To leave thy picture behind me, and take
+Thy portrait from my heart to keep it safe
+In the tomb of thine eyes?
+O, be silent! no more can this grief
+Be sealed up in words or deeds;
+But speak so that what I shall say may
+Make thee forget what is mine.
+To tell a tale to one whom all men
+Are jealous, who hath himself eyes for mine
+And hands to bestow them upon me,
+When he will let his blood flow to me
+5
+O, from what power hast thou this powerful might
+With insufficiency my heart to sway?
+To make me give the lie to my true sight,
+Or go on with a face that is too fair
+And show a false one in time of truth.
+Thou art my power and yet not all
+That I am; for by thy strength
+I can do no great thing, but small
+As if it were nothing at all.
+If, then, thou wilt be so
+As no greater than an idle tale
+To fill men's eyes with such joy as
+A hundred thousand are contented to see
+In thee, let them look upon thee
+6
+Love is too young to know what conscience is;
+Yet who knows not conscience is born of love?
+Then, gentle cheater, urge not my amiss,
+For the time that will be when I shall live
+Will never yet have aught but this which thou
+Dost desire. So that if it should die
+Before my age was past, then hadst thou
+Thyself in that time for thy self-love
+Matched with myself and loved as one
+Who, while still alive, hath outlived his
+Begetting, though he lived no longer than
+This present hour: but now he dies
+Which has made him such an heir unto me
+As I could wish myself to be.
+7
+In loving thee thou know'st I am forsworn,
+But thou art twice forsworn, to me love swearing;
+In act thy bed-vow broke, and new faith torn
+To wither the flower of thine innocence.
+Yet this that thou hast done thou dost not hate
+Nor willst it be mine shame if in my
+love thou part with it.
+Forgive but a kiss from mine eye
+And stay there till we meet again,
+Or say nothing at all. But beware!
+My heart is never so sweet as when
+It looks on thy face full fair.
+If thou shouldst break my pledge or scorn
+Then here I'll find thee undone,
+8
+Cupid laid by his brand and fell asleep.
+A maid of Dian's this advantage found,
+And his love-kindling fire did quickly steep
+In the fair fountain with his blood;
+So now I have learned to lay my treasure
+On him whom all others do fear to see
+When he is so light as a feather.
+O that I had wisdom in me!
+My heart should not be enfeebled by thy
+Love, but in beauty most worthy to live
+In thee: then mayst thou never die
+By any wight or beast, nor lose
+The goodliest part of myself.
+No, no, for thine is a sweet nature
+9
+The little love-god, lying once asleep,
+Laid by his side his heart-inflaming brand,
+Whilst many nymphs that vowed chaste life to keep
+His fair image with sweet loving care did hold
+In lonely memory the sacred flame;
+Then all their thoughts and all their pains
+Were blotted from this mortal frame:
+But not a soul in those days was wise
+To make light of such things as these
+Which were full enough to fill heaven's hall.
+For though they had thought of him long since
+They yet knew not how much time he still
+Might live after so long an age
+When now it shall be too late for men
+10
+When my love swears that she is made of truth,
+I do believe her, though I know she lies,
+That she might think me some untutored youth,
+Whose heart was new with thought and eyes
+With youth's love. But now I see
+My lady so full of faults, all to be
+Hated by the world; they say
+She hath no taste nor taste for beauty:
+And what art thou in her? What wit
+In thy face or thoughts, but more than wits
+To write a tale where thyself doth not
+Live. Why then tell not this,
+Thou'rt too much like an old book
+Which books never should die out. This look
+11
+Two loves I have, of comfort and despair,
+That like two spirits do suggest me still.
+My better angel is a man right fair,
+And my worse doth him wax to an ill
+By thy poor example; so that all
+The shame which thou art the author of
+Dost in thee be well displayed by his woe
+Which thou hast given him for being such as he
+Is. Yet he hath no joy but from his hate
+To look upon thee more than other men see
+Than I will make show to you with my sight
+Of this mortal face when it looks on thee
+In death's place: therefore stay,
+For your own sake, while I shall live

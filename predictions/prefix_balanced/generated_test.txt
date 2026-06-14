@@ -1,0 +1,221 @@
+# Experiment Metadata
+# {"batch_size": 8, "best_dev_loss": 3.6378, "best_epoch": 6, "checkpoint": "/home/elicer/project/prefix_tuning_cloud/../prefix_tuning_results/20260613-102400/P3_prefix20_hidden512_lr2e-4/checkpoint.pt", "chrf_tie_margin": 0.1, "chrf_top_k": 2, "decoding_method": "prefix_only_plain_top_p", "early_stop_min_delta": 0.005, "early_stop_patience": 2, "early_stop_reason": "no dev loss improvement >= 0.005 for 2 consecutive epoch(s)", "epochs": 10, "generation_seed": 21717, "log_path": "/home/elicer/project/prefix_tuning_cloud/../prefix_tuning_results/20260613-102400/P3_prefix20_hidden512_lr2e-4/train_generate.log", "lr": 0.0002, "max_length": 180, "model_size": "gpt2-xl", "name": "P3_prefix20_hidden512_lr2e-4", "num_sonnets": 12, "output_path": "/home/elicer/project/prefix_tuning_cloud/../prefix_tuning_results/20260613-102400/P3_prefix20_hidden512_lr2e-4/generated_test.txt", "prefix_dropout": 0.1, "prefix_hidden_size": 512, "prefix_length": 20, "prompt_path": "data/sonnets_held_out.txt", "seed": 11711, "selected_checkpoint": "/home/elicer/project/prefix_tuning_cloud/../prefix_tuning_results/20260613-102400/P3_prefix20_hidden512_lr2e-4/selected_checkpoint.pt", "selected_dev_chrf": 40.911126526343445, "selected_dev_loss": 3.6377573013305664, "selected_epoch": 6, "selection_metric": "dev_chrf_then_dev_loss", "split": "test", "stop_epoch": 8, "stopped_early": true, "temperature": 0.7, "top_p": 0.85, "total_params": 1639242496, "trainable_params": 79069696}
+--Generated Sonnets-- 
+
+
+0
+Those lips that Love's own hand did make
+Breathed forth the sound that said "I hate"
+To me that languished for her sake;
+And when I heard them, I was not so
+As to think them mine own, but of their hate
+I felt some change, as though some hand were dead.
+For then I thought I saw some face that was mine,
+And that face was dead, and was like a corpse.
+  But now, when I hear their sound, I see
+  That face as though it were alive, and in my sight
+  I see it alive, and in my sight it doth live.
+  I see it in the face of that face, and in the face of that face.
+  I see it, and yet I hate it not.
+  I hate it, and yet I love it not.
+  I love it, and yet I hate it not.
+  I hate it, and yet I love it not.
+  I
+1
+Poor soul, the center of my sinful earth,
+Pressed with these rebel powers that thee array,
+Why dost thou pine within and suffer dearth,
+When thou art, as I see, as good as thou art good?
+Because thy sweet self is not so bad as thou art bad.
+Thou art good in thyself, but so is my self.
+Thou art good in thyself, but so is mine.
+  I am good in myself, but so is mine.
+  I am good in myself, but so is mine.
+  I am good in myself, but so is mine.
+  I am good in myself, but so is mine.
+  I am good in myself, but so is mine.
+  I am good in myself, but so is mine.
+  I am good in myself, but so is mine.
+  I am good in myself, but so is mine.
+  I am good in myself, but so is mine.
+  I am
+2
+My love is as a fever, longing still
+For that which longer nurseth the disease,
+Feeding on that which doth preserve the ill,
+And still in the sweetest fever doth feed
+The fever which is in the body.
+But, sweet love, what is this fever?
+It is not a fever, but a thought
+Which is in the body, and doth live
+In the body, and doth feed that which doth live
+In the body, and doth feed that which doth live.
+  To my love's death, sweet love, that is this thought,
+  To the body's death, sweet body, that is this thought.
+  I am not dead, but I am so far from being dead,
+  That I live, and I die, and I live again.
+  And I die again, and I live again, and I die again.
+  Sweet love, I have no part in this, but I am dead.
+3
+O me, what eyes hath love put in my head,
+Which have no correspondence with true sight!
+Or if they have, where is my judgment fled,
+That my love may be well pleased with truth?
+For, for all my love, I have no reason
+To judge of my love, but only to love.
+My love, which is so fair and so true,
+Is as a wild beast in the forest,
+Which, if he be not satisfied,
+Will not rest, but makes a new wintry forest,
+And the beauty of his rump will not grow.
+  But, if he be satisfied, his love
+  Shall grow, and then his beauty shall grow.
+  For, love, my love, is more than beauty,
+  And more than truth; for, truth, if it be true,
+  Cannot be a love, but must be a work.
+  And, love, is more than beauty,
+  Because beauty is but a proof of love.
+4
+Canst thou, O cruel, say I love thee not
+When I against myself with thee partake?
+Do I not think on thee when I forgot
+To watch thee with a tender eye,
+When I my sorrows forgot to view?
+Do I not think on thee when I thought not on thee?
+Or have I not thought on thee when I thought not on thee?
+  And then, O thou that dost me wrong,
+  I love thee more than thou dost me.
+  For I love thee as I do thee not,
+  And I hate thee as I hate thee not.
+  And yet, O thou that dost me wrong,
+  I love thee more than thou dost me.
+  For I love thee as I do thee not,
+  And I hate thee as I hate thee not.
+  And yet, O thou that dost me wrong,
+  I love thee more than thou dost me.
+  For I love thee as I do
+5
+O, from what power hast thou this powerful might
+With insufficiency my heart to sway?
+To make me give the lie to my true sight,
+Or to my soul to do what my senses do
+Whose sight I do not deny, nor my soul to obey
+That which it hath no power to do.
+O, let me but call thee to mind,
+And make thee a prisoner to my will.
+Thou art so strong that no power of mine
+Can keep thee from thy wonted course;
+And yet, if thou be so, how art thou so strong?
+  I am weak, that art thy strength, that art thine.
+  I am weak, that art thy strength, that art thine.
+  I am weak, that art thy strength, that art thine.
+  I am weak, that art thy strength, that is thine.
+  I am weak, that art thy strength, that is thine.
+  I am weak, that art
+6
+Love is too young to know what conscience is;
+Yet who knows not conscience is born of love?
+Then, gentle cheater, urge not my amiss,
+But, in my love, beguile me not with false love.
+Be not too quick to be angry,
+But, when you have been wronged, do not blame me.
+Be not too quick to be angry,
+But, when you have been wronged, do not blame me.
+  For if you do, I'll hate you, and, if you hate me,
+  I'll love you no more. Love is too young to know what love is,
+  And love, though it be too young to know,
+  Has learned to be wise and to love.
+  If you love me, you will hate me not.
+  And, if you hate me, you will love me not.   You love me, you will hate me not.     You love me, you will hate me not.
+7
+In loving thee thou know'st I am forsworn,
+But thou art twice forsworn, to me love swearing;
+In act thy bed-vow broke, and new faith torn,
+And me for thy sake I do not swear.
+O, wert thou not made for me, but for me alone,
+That I should not swear by thee, my love?
+  But thou art more than love, for thou art
+  My every thought, and my every deed,
+  And all that I am, all that I can be,
+  And all that I have, all that I have done.
+  And yet, since thou art my love, I swear by thee.
+  For I love thee as if thou were my self.
+  For love is a great thing, and love's name is great.
+  And yet, I love thee not as I love myself.
+  Love's name is great, and love's name is my name.
+  And yet, I love thee not as I love myself.
+8
+Cupid laid by his brand and fell asleep.
+A maid of Dian's this advantage found,
+And his love-kindling fire did quickly steep,
+And, in his wake, the fair one died.
+And so, as she died, his love-blood did flow,
+And, on the earth, his fair lady's tomb
+Was laid with a drowsy stone.
+  But still, the fair one's fair blood did flow,
+  And, as the sweetest of flowers, so did it flow,
+  Till all the sweetest flowers in the world were dead.
+  And yet, when the blood of Dian's love
+  Was dried up, the sweetest flowers did grow,
+  And they were the sweetest flowers that ever grew.
+  And, when the sweetest flowers were dead, they were dead.
+  And, when the sweetest flowers were dead, they were dead.
+  And, when the sweetest flowers were dead, they were dead.
+9
+The little love-god, lying once asleep,
+Laid by his side his heart-inflaming brand,
+Whilst many nymphs that vowed chaste life to keep
+His rank of rankly rank had their eyes
+Upon him, and were with joy a-wearing,
+And others with more cheerful love his eye,
+And the love-god in his beauty more full,
+Shall look upon you, and be glad to see
+That love, the greatest of all gifts, is
+In thee. But in his beauty there is
+But the shadow of love, and in his love
+There is but the shadow of love.
+  For love, the greatest of gifts, is but a shadow,
+  That love's shadow in thee may give life.
+  He that hath this shadow of love in his love
+  Will live, but he that hath not this shadow of love
+  In thee shall die.  For he that hath not this shadow of love
+  In thee shall die.   He that hath
+10
+When my love swears that she is made of truth,
+I do believe her, though I know she lies,
+That she might think me some untutored youth,
+Who hath not the best of the world's
+Learning, and yet hath not the worst of it,
+But in my own truth, and my own learning,
+Which I have not been taught but by thee.
+O, if I could prove my love to be true,
+And prove my love to be in truth,
+I would have no need of thy learning.
+  But, for my part, I think that the truth
+  Is all in the heart, and that love
+  Is all in the learning.
+  And therefore, love, I will give thee the best
+  Of that which I have, and the best of that which I have,
+  And teach thee that which I have not.
+  And teach me, if thou wilt, the best of my love.
+  And teach me, if thou wilt, the
+11
+Two loves I have, of comfort and despair,
+That like two spirits do suggest me still.
+My better angel is a man right fair,
+Who with his love's love hath given me life.
+But my darker angel is a devil,
+Whose love of the world's woe hath made him bold.
+He hath made his own base in the world,
+And made himself the love of all men's woe.
+  But to my lighter angel I say,
+  O, be not so, my fairest love!
+  The world hath a better love than I.
+  O, be not so, my darker angel!
+  The world hath a worse love than I.
+  O, be not so, my lighter angel!
+  The world hath a worse love than I.
+  O, be not so, my darker angel!
+  The world hath a worse love than I.
+  O, be not so, my lighter angel!
+  The world hath

@@ -1,0 +1,87 @@
+Loading checkpoint: /home/elicer/project/p3_decoding_cloud/checkpoints/p3_selected_checkpoint.pt
+Ridge train prompt 1/12
+Ridge train prompt 2/12
+Ridge train prompt 3/12
+Ridge train prompt 4/12
+Ridge train prompt 5/12
+Ridge train prompt 6/12
+Ridge train prompt 7/12
+Ridge train prompt 8/12
+Ridge train prompt 9/12
+Ridge train prompt 10/12
+Ridge train prompt 11/12
+Ridge train prompt 12/12
+Trained Ridge: examples=36, target_mean=0.4143, train_mae=0.0113, elapsed_sec=1886.02
+Ridge coefficients: rhyme=0.0033, graded_rhyme=-0.0028, length=-0.0009, length_variance=-0.0009, repetition=0.0000, ending_diversity=0.0019, prompt_overlap=0.0029
+dev sonnet 1/12: candidates=3
+dev sonnet 0: selected=1/3, predicted_chrf=0.4148
+dev sonnet 0: elapsed_sec=152.76
+dev sonnet 2/12: candidates=3
+dev sonnet 1: selected=3/3, predicted_chrf=0.4147
+dev sonnet 1: elapsed_sec=157.15
+dev sonnet 3/12: candidates=3
+dev sonnet 2: selected=2/3, predicted_chrf=0.4145
+dev sonnet 2: elapsed_sec=152.31
+dev sonnet 4/12: candidates=3
+dev sonnet 3: selected=1/3, predicted_chrf=0.4147
+dev sonnet 3: elapsed_sec=153.63
+dev sonnet 5/12: candidates=3
+dev sonnet 4: selected=3/3, predicted_chrf=0.4143
+dev sonnet 4: elapsed_sec=154.32
+dev sonnet 6/12: candidates=3
+dev sonnet 5: selected=3/3, predicted_chrf=0.4143
+dev sonnet 5: elapsed_sec=158.12
+dev sonnet 7/12: candidates=3
+dev sonnet 6: selected=3/3, predicted_chrf=0.4149
+dev sonnet 6: elapsed_sec=153.21
+dev sonnet 8/12: candidates=3
+dev sonnet 7: selected=1/3, predicted_chrf=0.4138
+dev sonnet 7: elapsed_sec=154.55
+dev sonnet 9/12: candidates=3
+dev sonnet 8: selected=1/3, predicted_chrf=0.4142
+dev sonnet 8: elapsed_sec=154.07
+dev sonnet 10/12: candidates=3
+dev sonnet 9: selected=3/3, predicted_chrf=0.4145
+dev sonnet 9: elapsed_sec=158.18
+dev sonnet 11/12: candidates=3
+dev sonnet 10: selected=1/3, predicted_chrf=0.4149
+dev sonnet 10: elapsed_sec=158.35
+dev sonnet 12/12: candidates=3
+dev sonnet 11: selected=2/3, predicted_chrf=0.4150
+dev sonnet 11: elapsed_sec=153.44
+test sonnet 1/12: candidates=3
+test sonnet 0: selected=2/3, predicted_chrf=0.4149
+test sonnet 0: elapsed_sec=151.44
+test sonnet 2/12: candidates=3
+test sonnet 1: selected=1/3, predicted_chrf=0.4147
+test sonnet 1: elapsed_sec=158.09
+test sonnet 3/12: candidates=3
+test sonnet 2: selected=2/3, predicted_chrf=0.4144
+test sonnet 2: elapsed_sec=144.80
+test sonnet 4/12: candidates=3
+test sonnet 3: selected=2/3, predicted_chrf=0.4145
+test sonnet 3: elapsed_sec=154.60
+test sonnet 5/12: candidates=3
+test sonnet 4: selected=3/3, predicted_chrf=0.4147
+test sonnet 4: elapsed_sec=154.32
+test sonnet 6/12: candidates=3
+test sonnet 5: selected=1/3, predicted_chrf=0.4146
+test sonnet 5: elapsed_sec=153.84
+test sonnet 7/12: candidates=3
+test sonnet 6: selected=2/3, predicted_chrf=0.4143
+test sonnet 6: elapsed_sec=154.62
+test sonnet 8/12: candidates=3
+test sonnet 7: selected=1/3, predicted_chrf=0.4145
+test sonnet 7: elapsed_sec=156.92
+test sonnet 9/12: candidates=3
+test sonnet 8: selected=3/3, predicted_chrf=0.4148
+test sonnet 8: elapsed_sec=152.75
+test sonnet 10/12: candidates=3
+test sonnet 9: selected=1/3, predicted_chrf=0.4147
+test sonnet 9: elapsed_sec=152.89
+test sonnet 11/12: candidates=3
+test sonnet 10: selected=3/3, predicted_chrf=0.4147
+test sonnet 10: elapsed_sec=155.13
+test sonnet 12/12: candidates=3
+test sonnet 11: selected=1/3, predicted_chrf=0.4148
+test sonnet 11: elapsed_sec=151.05

@@ -1,0 +1,5 @@
+{
+  "google_drive_file_id": "https://drive.google.com/file/d/1aNs-Y8EqPyKzIx-KhoddaYlMZKFwD50g/view?usp=sharing",
+  "checkpoint_path": "checkpoints/p3_selected_checkpoint.pt",
+  "expected_min_size_mb": 250
+}

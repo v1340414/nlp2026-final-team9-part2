@@ -1,0 +1,185 @@
+# Experiment Metadata
+# {"checkpoint": "/home/elicer/project/p3_decoding_cloud/checkpoints/p3_selected_checkpoint.pt", "experiment": "rerank_balanced_n30", "max_length": 180, "method": "cmu_ridge", "model_size": "gpt2-xl", "num_candidates": 30, "prefix_hidden_size": 512, "prefix_length": 20, "prefix_source": "P3_prefix20_hidden512_lr2e-4", "rerank_candidates": 3, "ridge_model_path": "/home/elicer/project/p3_decoding_cloud/../p3_decoding_results/rerank_balanced_n30/ridge_model.json", "ridge_train_candidates": 3, "ridge_trained_this_run": true, "seed": 11711, "split": "dev", "target_lines": 14, "temperature": 0.7, "top_p": 0.85}
+--Generated Sonnets-- 
+
+
+0
+Thine eyes I love, and they, as pitying me,
+Knowing thy heart torment me with disdain,
+Have put on black, and loving mourners be,
+And yet in my soul there is no pain.
+O how sweet are thine thoughts to mine eye
+When thou dost so like that which all others
+Do! O what sweet things in thine eye
+Are done by the thinnest of shadows
+That we may see thee still; yea,
+The sun's shadow has his lightest day
+In this world where every other ray
+Is but a dark night-shade for him
+Who dwells on earth and knows not what it
+May bring forth next; nay, more than that
+1
+Beshrew that heart that makes my heart to groan
+For that deep wound it gives my friend and me.
+Is 't not enough to torture me alone,
+To have the eye of a world upon me?
+I'll take thee with mine eyes' sight
+And tell thy thoughts in their true light;
+Then shall I say unto them: "O how bright
+Thou art! Why then so dark is this night
+Which thou dost bear."
+And now they are all mine, for thine
+But what do I know but what they
+Tells about your being? What else can
+Say to you than that I love thee
+Or think well of thee or value thee
+2
+So, now I have confessed that he is thine
+And I myself am mortgaged to thy will,
+Myself I'll forfeit, so that other mine
+May not be my heir. But thou art still
+The richest of all this world's wealth,
+Wherefore the man whose life thou dost claim
+Is worthy in thee to die with his death;
+For me no title can hold me back from
+Thy soul and eye alone. Therefore do
+Behold, since thou hast made a part
+Of mine own treasure, let him live who
+Can do what shouldst please thee best
+When he hath heard how great he was by thee
+In thy sight. Thus shall the love of thee
+3
+Whoever hath her wish, thou hast thy will,
+And will to boot, and will in overplus.
+More than enough am I that vex thee still,
+Thy heart's greatest delight;
+The greater part of the world doth more
+O'erflow with love for me,
+That makes the use of all things dear
+To my mind and body: what else can be
+But this? That thine eye or tongue
+Make a song sweetly upon my soul
+As it hath been by mine own lips sung
+Since first I began to live.
+But how shall I not, when I do
+Be choleric unto you!
+4
+If thy soul check thee that I come so near,
+Swear to thy blind soul that I was thy will,
+And will, thy soul knows, is admitted there.
+But thou art not yet of my mind;
+Thy heart's thoughts are far from me,
+The mind with which they have begun
+Is far more than the most keen eye can see
+To make out all manner of truth in thine
+Pleasure and pride, or beauty and shame
+In love or grief, if these be found
+Which love doth bestow on every outward sight
+Of any creature in this world.
+O, why should such a one write
+But how he loves his self, or what
+5
+Thou blind fool, Love, what dost thou to mine eyes
+That they behold and see not what they see?
+They know what beauty is, see where it lies,
+And with that knowledge I look on thee.
+But if their sight be no more than a dream
+Then art thou but the prisoner of thyself
+To whom all other man's deeds are thine
+Which thou hast done for fear to thyself.
+To me thou wilt find my nature most
+If that when thou doest as I do
+In beauty or in hate I canst
+All things which thou canst do.
+"O, this love," says he, "what art
+The chiefest ornament in our part?"
+6
+When my love swears that she is made of truth
+I do believe her though I know she lies,
+That she might think me some untutored youth,
+Though all the world be old and wise.
+But if she had not so sworn, then
+She must needs have been deceived;
+For there are more fools than honest men
+And can make their wits to deceive
+The cunningest among them who with lies speak
+To those they call wise and honest.
+They lie in ignorance when they swear
+And tell what they say without thought or doubt
+Which deceives them yet more to the end
+That a fool may seem wiser by his pride
+7
+O, call not me to justify the wrong
+That thy unkindness lays upon my heart;
+Wound me not with thine eye but with thy tongue;
+Make no sign of your love in my sight
+And be silent as a stone when I look
+At thee that is stained by your hate.
+But give me leave to say this:
+Thou art so fair and lovely that
+Though my wounds were mortal thou shouldst live
+So long as they are, yet wouldst thou
+Preserve them from death's cruel hand
+To keep them all to mine own sweet tomb
+Which thou hast made for these unhappy days
+When death shall weary me with his blows.
+8
+Be wise as thou art cruel; do not press
+My tongue-tied patience with too much disdain,
+Lest sorrow lend me words, and words express
+Thy thoughts. Do not let this false thought
+That I may speak seem to stop the well
+Which makes my heart's true love flow forth;
+Let it be thy gift that in time will
+Reflect on itself and live again.
+If then thy speech be more than a sound
+And so in time to the time it should
+Of thee and me have no better end
+Then all shall come back to us for good
+To say what we did think when our hearts
+Were young and full of promise.
+9
+In faith, I do not love thee with mine eyes,
+For they in thee a thousand errors note;
+But 'tis my heart that loves what they despise,
+And if thou dost it me wrong to hate
+Thy beauty and thine amour's joy
+To be so stifled is the truth.
+Mine eye hath seen thee more fair than all
+The world can show, but my heart hath loved
+That which thy sight has betrayed by night
+When no mortal eye was there, or by day
+On many cheeks did see things done right.
+And yet when I look upon thee now
+In your sweetest aspect I may well forget
+How often on some face of good report
+10
+Love is my sin, and thy dear virtue hate,
+Hate of my sin, grounded on sinful loving.
+O, but with mine compare thou thine own state,
+And I will be judged in thee as to myself
+If all the world may not judge well of me
+That thou art better than they do think;
+But if that world should judge them rightly
+Thou wilt lose by being found so false
+To say what I know for sure to prove true
+I am more then ever I was before
+When all my sins were past due.
+Thou hast now paid thy penance for
+Them which time hath made new still
+Which thou couldst never have done hadst
+11
+Lo, as a careful huswife runs to catch
+One of her feathered creatures broke away,
+Sets down her babe, and makes all swift dispatch
+To the kitchen for new-mown hay
+And quicked butter; so I run to thee
+For thy spirit's life: wherefore now,
+Thou great, bright light, let me see
+The skies in their youth, then break thine eye
+With sight that is old and blind.
+What more couldst thou give me than what
+Can scarce be seen with eyes that are young?
+O, tell my thought, which was no doubt
+When thou wast first made, how this world
+Was given unto us at birth,

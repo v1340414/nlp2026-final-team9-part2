@@ -1,0 +1,185 @@
+# Experiment Metadata
+# {"checkpoint": "/home/elicer/project/p3_decoding_cloud/checkpoints/p3_selected_checkpoint.pt", "experiment": "cmu_balanced_n30", "max_length": 180, "method": "cmu", "model_size": "gpt2-xl", "num_candidates": 30, "prefix_hidden_size": 512, "prefix_length": 20, "prefix_source": "P3_prefix20_hidden512_lr2e-4", "rerank_candidates": 1, "ridge_train_candidates": 0, "seed": 11711, "split": "dev", "target_lines": 14, "temperature": 0.7, "top_p": 0.85}
+--Generated Sonnets-- 
+
+
+0
+Thine eyes I love, and they, as pitying me,
+Knowing thy heart torment me with disdain,
+Have put on black, and loving mourners be,
+With sorrowful looks look for thy grace gone.
+But when I see thee in their shade
+And my own dark shadow of the night,
+When all the world's ill-starred stars
+Shall sink to ashes by thy fading sight
+While thou art brightest; then shall mine eye
+Make love a strong sun to my soul's
+Darkness that makes him burn out and die
+In whose darkened orb so many strange things
+Are seen. But, after all this,
+The more my mind is razed to its
+1
+Beshrew that heart that makes my heart to groan
+For that deep wound it gives my friend and me.
+Is 't not enough to torture me alone,
+And yet you have this privilege with me
+To make your silent joys the loudest
+That I hear on a summer's day;
+So in that night of pain, when hearest
+The song that is sung at midnight by him
+Who loves me best, and those who love thee
+In some sweet discord of his own making
+Beget a strange new harmony for me?
+Then if I be comforted by any thing
+Except this music of mine which sings
+Upon thy ear, tell me what that is
+2
+So, now I have confessed that he is thine
+And I myself am mortgaged to thy will,
+Myself I'll forfeit, so that other mine
+May inherit my title and inherit all.
+I do not mind this loss, but I hate
+The thought of the estate which it may bring
+To me or to him who inherits it;
+For what can be more hateful than a thing
+That thou hast taken from another's hand?
+The father gave his son for his love
+And made him heir in part to his land
+Which he himself had given away.
+So should my own death take his place
+Or give to others his inheritance.
+3
+Whoever hath her wish, thou hast thy will,
+And will to boot, and will in overplus.
+More than enough am I that vex thee still,
+Who is so weak as not to be satisfied
+With all the world's good things;
+The best of my time has left me alone
+To do what now my mind can devise
+Of what other men think they have done.
+Therefore take heed how thou dost give me
+What onely thine own thought may suggest
+For mine own thoughts are dulled by thee
+As with a lightening from heaven thou gavest
+Aye-glorious sunset for evening's
+Dusk. Thou didst so lavish the skies
+4
+If thy soul check thee that I come so near,
+Swear to thy blind soul that I was thy will,
+And will, thy soul knows, is admitted there.
+But if thou art silent and watchful,
+Thyself shall be the judge of my worth
+Who lives in this world only for show;
+For every man's face hath his own value
+Which when we live together doth he show
+To all others with a pretty grace.
+And though mine eyes may not see it
+But know what is best for me alone
+Nor feel my heart's true love, yet
+If I but give him some sight of you
+The very same thing shall seem to him
+5
+Thou blind fool, Love, what dost thou to mine eyes
+That they behold and see not what they see?
+They know what beauty is, see where it lies,
+And their true love's eye can look on thee
+But once in the month of March;
+The sweetest sight that ever I saw
+Was at thy window when with my heart
+I looked upon thee burning hot.
+But though I knew how all these things were
+Then did this picture live for me
+As a poor fair image in an hour
+Of summer-time: then was there no
+Such lovely thing as this painting's
+Beauty yet had life in his eyes
+6
+When my love swears that she is made of truth
+I do believe her though I know she lies,
+That she might think me some untutored youth,
+And so make up a false tale to win his
+Degree. But if by heaven's mercy
+The devil should lie in this love and cheat
+My foolishness with counterfeit beauty,
+If he would make it seem true that
+He had more wit than woman can show
+Which all the world cannot see, then
+By heavens' vengeance on him for such
+A crime shall every fair thing be mine
+To set before my eyes as many good things
+As I am worth in face or wealth,
+7
+O, call not me to justify the wrong
+That thy unkindness lays upon my heart;
+Wound me not with thine eye but with thy tongue;
+Forgive all thy faults and mine, as thou art
+A loving friend that hath a thousand wounds.
+Thou know'st I love thee more than others
+Which dost envious eyes show in their faces
+And hate with whose blood they feed on love's
+Inward life: this is what keeps me
+From envy of thineself, which thyself
+Lives for many days, though she may be
+No better to him that loves her than himself
+To die for his love's sake alone
+And then live for herself alone.
+8
+Be wise as thou art cruel; do not press
+My tongue-tied patience with too much disdain,
+Lest sorrow lend me words, and words express
+Thy griefs. If I be thy pen
+Which must write these things to thee in bitter woe
+And make them known by my blood's tears,
+I'll pay a debt of praise that thou owe
+To the world for all its praises,
+For which it doth best give thee so many
+Mixed sweetmeats with words made from sweet
+Sweetness' juices: but if this be
+A blame on thy poor tongue, then what
+Is there more than mine own fault?
+Forgive me therefore for speaking what
+9
+In faith, I do not love thee with mine eyes,
+For they in thee a thousand errors note;
+But 'tis my heart that loves what they despise,
+And if I could but set it free from hate
+To see thy true nature and worth,
+I should be like unto the sun.
+O how sweet is love to find aught
+Of beauty or of praise so well known
+That one's sight can only view but on
+The outward show without knowing his form!
+For that I know you are no vain
+To leave behind your own lovely face
+When thou wilt look at me again
+And give me a better name than thine
+10
+Love is my sin, and thy dear virtue hate,
+Hate of my sin, grounded on sinful loving.
+O, but with mine compare thou thine own state,
+Which in thine beauty surpasses all things
+And excels them all in love's tenderness
+Of its sweetest dalliance; for from thee
+The world may learn how fair a mistress
+Is to his sweetest desire, if he be
+In that sweetest heart which has the greatest
+That ever was or can be in love
+To any body that loves him best.
+O, let me never take thought of
+That love so good should be made vile
+By not being loved at least as well
+11
+Lo, as a careful huswife runs to catch
+One of her feathered creatures broke away,
+Sets down her babe, and makes all swift dispatch
+To the lighted barns; yet such time
+As she hath in that charge, let it not be
+That by reason of her labor she doth
+Make her husband's life so much shorter than he
+Who is slowest to lose his breath.
+O, if thou shouldst find my love wailing
+Within thy bosom's breast, when I die
+I shall have been your most loyal servant
+And look on you with more eager eye
+Than upon any other wife's son.
+Then may no faultless thing be done

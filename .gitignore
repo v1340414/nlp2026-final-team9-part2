@@ -1,10 +1,7 @@
-*pretest
-*~
+.venv/
+__pycache__/
 *.pyc
+checkpoints/*.pt
 *.pt
-*.pkl
-.idea/
-out/
-.DS_Store
-predictions/*
-logs/*
+*.part
+p3_decoding_results/

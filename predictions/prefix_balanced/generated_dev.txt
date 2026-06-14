@@ -1,0 +1,214 @@
+# Experiment Metadata
+# {"batch_size": 8, "best_dev_loss": 3.6378, "best_epoch": 6, "checkpoint": "/home/elicer/project/prefix_tuning_cloud/../prefix_tuning_results/20260613-102400/P3_prefix20_hidden512_lr2e-4/checkpoint.pt", "chrf_tie_margin": 0.1, "chrf_top_k": 2, "decoding_method": "prefix_only_plain_top_p", "early_stop_min_delta": 0.005, "early_stop_patience": 2, "early_stop_reason": "no dev loss improvement >= 0.005 for 2 consecutive epoch(s)", "epochs": 10, "generation_seed": 11717, "log_path": "/home/elicer/project/prefix_tuning_cloud/../prefix_tuning_results/20260613-102400/P3_prefix20_hidden512_lr2e-4/train_generate.log", "lr": 0.0002, "max_length": 180, "model_size": "gpt2-xl", "name": "P3_prefix20_hidden512_lr2e-4", "num_sonnets": 12, "output_path": "/home/elicer/project/prefix_tuning_cloud/../prefix_tuning_results/20260613-102400/P3_prefix20_hidden512_lr2e-4/generated_dev.txt", "prefix_dropout": 0.1, "prefix_hidden_size": 512, "prefix_length": 20, "prompt_path": "data/sonnets_held_out_dev.txt", "seed": 11711, "selected_checkpoint": "/home/elicer/project/prefix_tuning_cloud/../prefix_tuning_results/20260613-102400/P3_prefix20_hidden512_lr2e-4/selected_checkpoint.pt", "selected_dev_chrf": 40.911126526343445, "selected_dev_loss": 3.6377573013305664, "selected_epoch": 6, "selection_metric": "dev_chrf_then_dev_loss", "split": "dev", "stop_epoch": 8, "stopped_early": true, "temperature": 0.7, "top_p": 0.85, "total_params": 1639242496, "trainable_params": 79069696}
+--Generated Sonnets-- 
+
+
+0
+Thine eyes I love, and they, as pitying me,
+Knowing thy heart torment me with disdain,
+Have put on black, and loving mourners be,
+And give the more to their wailing,
+Thy beauty so beautiful that, if I saw
+Myself in a mirror, I should find
+A beauty in the shadow of thy face,
+Which now I see but in the likeness of thee.
+  But that thou art not seen in my sight,
+  I am not so blind as to think that I see thee.
+  I see thee in the eyes of all that see thee,
+  And in the sweetest of their thoughts.
+  And that I love thee so, I see in thee
+  The image of all that is most sweet.
+  All my thoughts are full of thee, all my love.
+  And all my love is full of thee, all my thoughts.
+  I love thee so, I see thee in my thoughts.
+  And in all my thoughts I
+1
+Beshrew that heart that makes my heart to groan
+For that deep wound it gives my friend and me.
+Is 't not enough to torture me alone,
+And to make me groan within myself?
+What, then, is the use of my being,
+If I am not to be comforted?
+What, then, am I but a sick man,
+That can not be comforted, and that must die?
+  And what is my friend to me, but a sick man?
+  I am, my friend, a sick man,
+  And yet the better man of you both.
+  Therefore, my friend, do you comfort me;
+  And when I am comforted, then you are comforted.
+  If I were sick, you would comfort me,
+  And when I was comforted, then you would be comforted.
+  And then you would be all the better man of me.
+  Then you are my friend, and I love you.
+  Therefore
+2
+So, now I have confessed that he is thine
+And I myself am mortgaged to thy will,
+Myself I'll forfeit, so that other mine
+May be a kind of debt to thee.
+The true love of the world will not suffer
+The thief to steal from the true love of him.
+He is the true love of the world,
+And that is all that matters to me.
+  For what I would most to know,
+  What I would most to know, is what he is.
+  I know him not, nor shall I know him.
+  But I know that he is thine.
+  And that is all that matters to me.
+  I love him, and therefore I love him not.
+  But I love him, and therefore I love him.
+  I love him, and therefore I love him.
+  I love him, and therefore I love him not.
+  But I love him, and therefore I love him not.
+  But I
+3
+Whoever hath her wish, thou hast thy will,
+And will to boot, and will in overplus.
+More than enough am I that vex thee still,
+Thyself the great queen of the world's love;
+More than enough, that, in thy lack, I live,
+When thou dost not live, and when thou dost live,
+Thou art all the world's master.
+  But what, then, is to be done, when thou dost live?
+  To live is to be content; to be content is to live.
+  And in this, that thou dost live, I will live,
+  For in that I live thou livest.  And in that thou dost live, I will live.
+  And in that I live, thou livest.   And in that I live, thou livest.   And in that I live, thou livest.   And in that I live, thou livest.    And in that
+4
+If thy soul check thee that I come so near,
+Swear to thy blind soul that I was thy will,
+And will, thy soul knows, is admitted there.
+Then thy self, with thy self, thou shalt see
+That this is my true self, and thyself,
+Thyself, thou shalt see, and, like him,
+Crowned with thyself.
+  This is my true self, thou, who art not;
+  This is my true self, thou, who art not;
+  This is my true self, thou, who art not.
+  This is my true self, thou, who art not;
+  This is my true self, thou, who art not.
+  This is my true self, thou, who art not;
+  This is my true self, thou, who art not.
+  This is my true self, thou, who art not;
+  This is my true self, thou, who art not.
+  This is my true self,
+5
+Thou blind fool, Love, what dost thou to mine eyes
+That they behold and see not what they see?
+They know what beauty is, see where it lies,
+And they know the beauty of thyself;
+But they are blind that see not what they see.
+They know that thou art fair, but they see not
+How that thou art fair, and yet they know not
+The beauty of thyself, and that is most.
+  O, how sweet is thy face, my love, that thou
+  See what is in thyself, and yet thou knowest
+  The beauty of thyself, which I see not.
+  O, what a treasure thou art, my love, to see
+  The beauty of thyself, and yet to see not
+  The beauty of thyself!  O, how sweet is thy face, my love, that thou see'st what is in thyself, and yet thou knowest not the beauty of thyself, and that is most. O, what a
+6
+When my love swears that she is made of truth
+I do believe her though I know she lies,
+That she might think me some untutored youth,
+And so in my love I should be her false,
+And my love, not knowing what was his, would trust
+His truth to her false shame.
+O, what a blessing it is,
+That I should be so false to my love!
+My love should be his true, his truth should be mine,
+And mine should be his false, his truth should be mine.
+  But when my love swears that he is made of love,
+  And so the truth is no longer mine,
+  Then I am not his true love, my love is false.
+  I am but his false love's false love.
+  I love him not, but his false love loves me.
+  I love him not, but his false love loves me.
+  I love him not, but his false love loves me.
+  I love
+7
+O, call not me to justify the wrong
+That thy unkindness lays upon my heart;
+Wound me not with thine eye but with thy tongue;
+Make not my head more than my heart's heart.
+O, then, let thy wrath be taken away,
+And, like a sorrowing child, my tongue
+Be thy own, and my heart's heart be thy hand.
+  Thou art my friend, and I am thy friend,
+  And when I am yours, thou art mine.
+  I will do thy will, and thou shalt have me.
+  I will be thy friend, and you are mine.
+  Thou art my friend, and I am thine.
+  I will do thy will, and thou shalt have me.
+  I will be thy friend, and you are mine.
+  Thou art my friend, and I am thine.
+  I will do thy will, and thou shalt have me.
+  I will be thy friend, and you are mine
+8
+Be wise as thou art cruel; do not press
+My tongue-tied patience with too much disdain,
+Lest sorrow lend me words, and words express
+My thoughts in words, and my thoughts in words
+In thoughts, and my thoughts in thoughts' worth.
+For, though I should write my thoughts in words,
+They will not be my thoughts, but the thoughts of others,
+Which I have not written, nor ever will write,
+But are written in the hearts of others,
+And in their hearts, like the pictures they represent,
+Show their own likenesses, and are but their likenesses.
+  And, for all that, they are mine, and I can not say
+  That they are not mine, but their true selves.
+  I have thought, and I have written, and I shall write no more.
+  But thou, sweet love, for that thou art so cruel,
+  Still hold me, and let me tell thee what I feel.
+  "  I
+9
+In faith, I do not love thee with mine eyes,
+For they in thee a thousand errors note;
+But 'tis my heart that loves what they despise,
+And the heart of mine is so full of love,
+That I am not to be moved with fear.
+For this love I am so proud, that I love
+The heart that makes me proud, and in my heart
+I keep my love, and yet my heart is not.
+  I see myself in thee, and I know
+  That, though I love thee with my heart,
+  I do not love thee with my eyes.
+  For they in thee a thousand errors note;
+  And I love what they despise, and yet my heart is not.
+  For this love I am so proud, that I love
+  The heart that makes me proud, and in my heart I keep my love.
+  I see myself in thee, and I know
+  That, though I love thee with my heart,
+  I do not
+10
+Love is my sin, and thy dear virtue hate,
+Hate of my sin, grounded on sinful loving.
+O, but with mine compare thou thine own state,
+That thou mayst not make me hate thee more than I hate thee,
+Nor my hate of thee more than my love of thee.
+Thy love hath thy love's love, thy hate thy hate's hate,
+And thou art the sum of all this love and hate.
+  O, but in thy love's love's love's love's hate,
+  How can I hate thee? O, but in thine hate's hate's hate,
+  How can I love thee? O, but in thine love's love's love's hate,
+  Where can I hide my love's hate from thee?  O, but in thine love's love's love's hate's hate,
+  Which hate, which love, which hate can I hide from thee?  O, but in thine love's love's love's love's hate
+11
+Lo, as a careful huswife runs to catch
+One of her feathered creatures broke away,
+Sets down her babe, and makes all swift dispatch
+Of her things to the market, so do I,
+When I see my time is done, and the time's right.
+O, when will that time come, that I may speak
+Of this hour of life, and then be gone?
+But if it be not then, let me go
+To the market to sell my time, and say
+To that man, who now shall be my time,
+"This is my time, if you will have it,
+And if you do not, then I am your time."
+  Then shall I sell my time, and the price I'll give
+  Shall be for the life of that man, that I bought.
+  But if you will not sell me, I will buy
+  Your time, and give it to you.  And then you shall have it,
+  And I shall have

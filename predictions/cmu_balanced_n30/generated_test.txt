@@ -1,0 +1,185 @@
+# Experiment Metadata
+# {"checkpoint": "/home/elicer/project/p3_decoding_cloud/checkpoints/p3_selected_checkpoint.pt", "experiment": "cmu_balanced_n30", "max_length": 180, "method": "cmu", "model_size": "gpt2-xl", "num_candidates": 30, "prefix_hidden_size": 512, "prefix_length": 20, "prefix_source": "P3_prefix20_hidden512_lr2e-4", "rerank_candidates": 1, "ridge_train_candidates": 0, "seed": 11711, "split": "test", "target_lines": 14, "temperature": 0.7, "top_p": 0.85}
+--Generated Sonnets-- 
+
+
+0
+Those lips that Love's own hand did make
+Breathed forth the sound that said "I hate"
+To me that languished for her sake;
+And in my heart I feel, with love's sweet
+Grief of mine own breast to think how
+That he is dead and no longer lives.
+But if thou speakest not this word now
+If he be alive when thy tongue doth utter
+Thy thought on him still shall say it
+In his ear: 'O God, how long
+Willst thou endure my sight! O let
+My eyes give thee beauty, or tell
+The truth of what they see.' But, alas,
+For many a day thy words are false,
+1
+Poor soul, the center of my sinful earth,
+Pressed with these rebel powers that thee array,
+Why dost thou pine within and suffer dearth,
+Thy sweetest fruit taken away?
+Doth thy life give thee time to be gay
+To serve me when I come in sight again
+And call on thee by name? O death's sad
+Revenge; what pleasure is there then
+In a dead heart to live so long as
+The breath in it shall not return?
+O, if this were true, if mine eyes
+Had sight, they would look back from thine
+But without their power canst thou know
+That which thou hast seen. The world hath no
+2
+My love is as a fever, longing still
+For that which longer nurseth the disease,
+Feeding on that which doth preserve the ill,
+And making my body sick with the disease
+Which it's self sustains. Therefore,
+O sweet mother of mine, take me hence
+To your nursing breast and nurse me there;
+But let not this thy pride, my heart's
+Best friend in sickness and my health,
+Be thine own to feed or nourish:
+Give thyself to some other than myself
+Thou hast no right to beguile
+With such wantonness of thy son
+As to keep him from thee alone;
+3
+O me, what eyes hath love put in my head,
+Which have no correspondence with true sight!
+Or if they have, where is my judgment fled,
+That that I may be found a false sweet?
+For why should it fear his being seen so soon
+When he has been e'en the same for many
+Years and thou art but one of his days?
+Why, then, do I live to see thee
+Thyself seen by other people's eyes;
+But thou thy self shalt not see, nor ever
+The beauties which thine eye sees.
+Or shall this show me as much pleasure
+As seeing myself in another man's face?
+Which I cannot bear, though I wish
+4
+Canst thou, O cruel, say I love thee not
+When I against myself with thee partake?
+Do I not think on thee when I forgot
+To give praise to thy beauty and to seek
+The sweet in the rich as well as the ugly
+And all that is dreary of life's lot
+Which, though it be worth while for thee
+For my sake to be glad of, yet
+I must not so much fear mine own pain
+As by this pride of thine thou hast made
+Mine happiness more dear than thine.
+For if I were now dead,
+Then wouldst thou live still, and live
+In death; but I am alive,
+5
+O, from what power hast thou this powerful might
+With insufficiency my heart to sway?
+To make me give the lie to my true sight,
+And say that I love thee with more than mind
+Which when once seen can never be unseen.
+But I do not believe it; for where
+Is thy thought of such a thing as mine
+That so I should live and die in truth
+For a man's hate or vanity's sake
+When thou art here at my service all day long
+Willing every tongue which doth speak
+The same praise to thyself, and letting
+No falsehood escape but by thine own mouth
+Which no other shall use without blame.
+6
+Love is too young to know what conscience is;
+Yet who knows not conscience is born of love?
+Then, gentle cheater, urge not my amiss,
+That, if thou be wiser than I in love
+And art the greater lover, thy mistress's shame
+Shall at last give thee pain. For love hath
+His own knowledge and may prove it by proof
+If he will speak his mind openly on truth
+When he does not err with deceit or trickery
+Or hide a fault from himself which others see
+And judge him worse than he should be.
+So far as that needeth me,
+Let no man say but that I do wrong
+To ask so much for the fair thing
+7
+In loving thee thou know'st I am forsworn,
+But thou art twice forsworn, to me love swearing;
+In act thy bed-vow broke, and new faith torn
+Thy self from the ground of wedlock's
+Marrying band. What can my heart in this
+Against all thy faults do but swear?
+What sayest that other than a curse?
+I can not go against thee without fear
+Of mine own base vices to show;
+So hateful is thine eye upon my
+Love's blotted out self. O let it so
+That when I tell how much more of thy
+Beauty doth make me covet than speak
+Or think of him who does thee wrong!
+8
+Cupid laid by his brand and fell asleep.
+A maid of Dian's this advantage found,
+And his love-kindling fire did quickly steep
+Her with the wick'ring embers that burned
+In her heart; but still she kept him
+To mind, till he grew so feeble
+That she thought it best to keep him.
+Then in a dream came another fair damsel
+Whom I call Cupid, whom thou shalt see
+On my sad grave, where every day is
+Another death. But why should I tell thee
+Of what we both were then? He was
+An idle youth, as all our days are
+When we live without desire or care.
+9
+The little love-god, lying once asleep,
+Laid by his side his heart-inflaming brand,
+Whilst many nymphs that vowed chaste life to keep
+His sacred flame in their eyes beheld
+That fire of which they were wont so much behold
+To make them like the sun. Then he woke
+And on the sight saw himself naked and cold
+With wounds upon his breast and back;
+Then with sighs did look his face toward heaven
+Where from the golden beams of glory bright
+He could see no other light than thine
+Which, after all these long years of night
+Had made him a poor subject for thee
+And by thy grace alone gave joy to me
+10
+When my love swears that she is made of truth,
+I do believe her, though I know she lies,
+That she might think me some untutored youth,
+Though that's not so. But when she says
+"Thou art a child," and "thy heart
+Is like to the ground, full of clay,"
+Then doth it seem more fitly thou wilt
+Be thought a young man than an old maid
+To speak in such wise as these words shall say
+Of thee, which should be spoken by a maid
+As well; but withal, since she
+Has said them, all my beauty hath fled
+And my life is lost for thy sake."
+Then canst thou find out what was mine
+11
+Two loves I have, of comfort and despair,
+That like two spirits do suggest me still.
+My better angel is a man right fair,
+And he's so very true that the world
+Is not his mistress but my brother;
+For though mine own eyes are set upon him
+As in some petty crime, yet all other
+Can't be seen by my sightless eye
+Which looks on nothing but himself.
+But then, O you who know what sorrows
+Are made for thee from thyself,
+I see no beauty but evil things:
+So much is my sister's being here
+The very worst thing thou hast to fear

@@ -1,0 +1,26 @@
+{
+  "feature_names": [
+    "rhyme",
+    "graded_rhyme",
+    "length",
+    "length_variance",
+    "repetition",
+    "ending_diversity",
+    "prompt_overlap"
+  ],
+  "coef": [
+    0.003303556047528009,
+    -0.002815834116417342,
+    -0.0009112130680037745,
+    -0.000851637660159443,
+    0.0,
+    0.0019452599158108323,
+    0.0029111530488603542
+  ],
+  "intercept": 0.41206672055582794,
+  "alpha": 1.0,
+  "train_mae": 0.011307459117175248,
+  "target_mean": 0.4142965215826449,
+  "target_std": 0.012982391000408109,
+  "num_examples": 36
+}
